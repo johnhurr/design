@@ -1,180 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>John Hurr — Product Design Leadership</title>
-<meta name="description" content="John Hurr, Director of Product Design. 19 years shaping connected products, digital platforms, and design organizations.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,480;0,9..144,600;1,9..144,420&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="John Hurr — Executive Design Leadership">
+  <title>John Hurr — Executive Design Leadership</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="site-header shell">
+    <a class="brand" href="#top" aria-label="John Hurr home">John Hurr</a>
+    <nav aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="resume/John-Hurr-Resume.pdf">Resume</a>
+    </nav>
+  </header>
 
-<div class="grain"></div>
+  <main id="top">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Executive Design<br>Leadership</h1>
+        <p>Building teams and shaping connected<br class="desktop-break"> hardware and software experiences.</p>
+        <span class="accent-rule" aria-hidden="true"></span>
+      </div>
+      <div class="hero-mark" aria-hidden="true"></div>
+    </section>
 
-<header class="hero">
-  <div class="wrap hero-inner">
-    <div class="hero-text">
-      <p class="eyebrow">01 — Product Design Leadership</p>
-      <h1>John Hurr</h1>
-      <p class="hero-role">Director of Product Design</p>
-      <p class="hero-lede">Nineteen years shaping connected products, digital platforms, and the
-        multidisciplinary teams that build them. Ten of those years spent leading design
-        organizations through hardware, software, and everything in between.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="assets/john-hurr-resume.pdf" target="_blank" rel="noopener">Download résumé</a>
-        <a class="btn btn-ghost" href="mailto:johnhurr@gmail.com">Get in touch</a>
+    <section class="work-section" id="work" aria-labelledby="work-title">
+      <div class="shell">
+        <h2 class="eyebrow" id="work-title">Selected Work</h2>
+
+        <article class="project">
+          <div class="project-copy">
+            <h3>Sonos</h3>
+            <p class="meta">2021–2026</p>
+            <p>Leading connected audio experiences across hardware, software, and the teams that bring them together.</p>
+            <a class="project-link" href="#" aria-label="View Sonos project">View project <span>→</span></a>
+          </div>
+          <div class="project-image">
+            <img src="images/sonos-ace-placeholder.jpg" alt="Sonos Ace headphones">
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-copy">
+            <h3>Best Buy Home App</h3>
+            <p class="meta">2019</p>
+            <p>Post-purchase experience that supports, engages, and builds customer loyalty.</p>
+            <a class="project-link" href="#" aria-label="View Best Buy Home App project">View project <span>→</span></a>
+          </div>
+          <div class="project-image">
+            <img src="images/best-buy-home-placeholder.jpg" alt="Best Buy Home App on a mobile phone">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about shell" id="about" aria-labelledby="about-title">
+      <h2 class="eyebrow" id="about-title">About</h2>
+      <p>Executive design leader focused on connected products, design organizations, and clear customer experiences across hardware and software.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="monogram" aria-hidden="true">JH</div>
+      <div class="contact">
+        <a href="mailto:hello@johnhurr.com">hello@johnhurr.com</a>
+        <span class="accent-rule small" aria-hidden="true"></span>
+        <p>Seattle, Washington</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/" rel="noreferrer">LinkedIn</a>
+        <a href="resume/John-Hurr-Resume.pdf">Resume (PDF)</a>
       </div>
     </div>
-    <div class="hero-photo">
-      <img src="assets/john-headshot-bw.jpg" alt="Portrait of John Hurr">
-    </div>
-  </div>
-</header>
-
-<main>
-
-  <section class="philosophy wrap" id="philosophy">
-    <p class="eyebrow">02 — Philosophy</p>
-    <blockquote>
-      Good design leadership isn't about having the best taste in the room — it's about
-      building the conditions where the right decisions become obvious. I've spent my
-      career doing that at the seams: between hardware and software, between research
-      and roadmap, between what a team can imagine and what it can actually ship.
-    </blockquote>
-    <p class="philosophy-note">— a starting point, written for you to make your own</p>
-  </section>
-
-  <section class="route" id="experience">
-    <div class="wrap">
-      <p class="eyebrow">03 — Experience</p>
-      <h2>A route, not a résumé</h2>
-    </div>
-
-    <div class="route-track wrap">
-      <svg class="route-line" viewBox="0 0 4 100" preserveAspectRatio="none" aria-hidden="true">
-        <line x1="2" y1="0" x2="2" y2="100" />
-      </svg>
-
-      <ol class="route-list">
-
-        <li class="route-stop">
-          <span class="route-dot" aria-hidden="true"></span>
-          <div class="route-content">
-            <p class="route-dates">May 2025 — Jul 2026</p>
-            <h3>Director of User Experience</h3>
-            <p class="route-org">Sonos · Seattle, WA</p>
-            <p class="route-desc">Led multidisciplinary UX across hardware, setup, and system
-              experiences for the Sonos portfolio — managing eight designers spanning hardware
-              UX, app design, and creative technology. Reorganized around product outcomes with
-              roughly 30% fewer people while holding delivery steady, and expanded live-system
-              prototyping across three UX teams.</p>
-          </div>
-        </li>
-
-        <li class="route-stop">
-          <span class="route-dot" aria-hidden="true"></span>
-          <div class="route-content">
-            <p class="route-dates">Apr 2022 — May 2025</p>
-            <h3>Senior UX Manager</h3>
-            <p class="route-org">Sonos · Seattle, WA</p>
-            <p class="route-desc">Established hardware UX guidelines and system-level interaction
-              principles that aligned industrial design, software, engineering, and product.
-              Introduced rapid prototyping practices that cut early product-definition work from
-              months to hours.</p>
-          </div>
-        </li>
-
-        <li class="route-stop">
-          <span class="route-dot" aria-hidden="true"></span>
-          <div class="route-content">
-            <p class="route-dates">Sept 2018 — Apr 2022</p>
-            <h3>UX Manager → Senior UX Manager</h3>
-            <p class="route-org">Best Buy · Seattle, WA</p>
-            <p class="route-desc">Led a design org of up to 15 direct reports and two UX managers.
-              Doubled the team, expanded its reach from one product to three, and held 100%
-              retention for two years. Built Best Buy's first digital membership platform team,
-              contributing to a 2× increase in customer acquisition.</p>
-          </div>
-        </li>
-
-        <li class="route-stop">
-          <span class="route-dot" aria-hidden="true"></span>
-          <div class="route-content">
-            <p class="route-dates">Oct 2012 — Sep 2018</p>
-            <h3>Senior UX Designer → Design Director</h3>
-            <p class="route-org">INRIX · Kirkland, WA</p>
-            <p class="route-desc">Led a team of seven across automotive, mobile, and web. Directed
-              UX for an in-car application ecosystem and a global traffic analytics platform, and
-              integrated parking capabilities that grew parking-services revenue 8× in one year.</p>
-          </div>
-        </li>
-
-      </ol>
-    </div>
-
-    <div class="wrap route-footnote">
-      <p>Earlier roles at Gripwire, Free &amp; Clear, Pyramid Communications, and Snapvine —
-        full history on the résumé. BFA Graphic Design, Miami University. HCI/UX Certificate, MIT CSAIL.</p>
-    </div>
-  </section>
-
-  <section class="portfolio wrap" id="work">
-    <p class="eyebrow">04 — Selected Work</p>
-    <h2>Case studies</h2>
-    <p class="portfolio-lede">A few projects, written up in more depth. Click through for the full PDF.</p>
-
-    <div class="portfolio-grid">
-
-      <a class="portfolio-card" href="assets/case-study-1.pdf" target="_blank" rel="noopener">
-        <span class="portfolio-index">01</span>
-        <h3>Case study title</h3>
-        <p>One line on the problem, the role, and the outcome.</p>
-        <span class="portfolio-link">View PDF →</span>
-      </a>
-
-      <a class="portfolio-card" href="assets/case-study-2.pdf" target="_blank" rel="noopener">
-        <span class="portfolio-index">02</span>
-        <h3>Case study title</h3>
-        <p>One line on the problem, the role, and the outcome.</p>
-        <span class="portfolio-link">View PDF →</span>
-      </a>
-
-      <a class="portfolio-card" href="assets/case-study-3.pdf" target="_blank" rel="noopener">
-        <span class="portfolio-index">03</span>
-        <h3>Case study title</h3>
-        <p>One line on the problem, the role, and the outcome.</p>
-        <span class="portfolio-link">View PDF →</span>
-      </a>
-
-      <a class="portfolio-card" href="assets/case-study-4.pdf" target="_blank" rel="noopener">
-        <span class="portfolio-index">04</span>
-        <h3>Case study title</h3>
-        <p>One line on the problem, the role, and the outcome.</p>
-        <span class="portfolio-link">View PDF →</span>
-      </a>
-
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <div class="footer-name">
-      <p class="footer-eyebrow">Let's talk</p>
-      <h2>John Hurr</h2>
-    </div>
-    <div class="footer-links">
-      <a href="mailto:johnhurr@gmail.com">johnhurr@gmail.com</a>
-      <a href="tel:9375816969">937.581.6969</a>
-      <a href="https://www.linkedin.com/in/johnhurr" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="assets/john-hurr-resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 </body>
 </html>
