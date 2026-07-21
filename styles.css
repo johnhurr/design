@@ -194,7 +194,7 @@ a { color: inherit; }
 .about {
   padding: 110px 0 0;
   display: grid;
-  grid-template-columns: .65fr 1.35fr;
+  grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr);
   align-items: center;
   gap: 72px;
 }
@@ -203,6 +203,7 @@ a { color: inherit; }
   display: grid;
   justify-items: start;
   gap: 32px;
+  min-width: 0;
 }
 
 .about-visual .eyebrow {
@@ -211,7 +212,8 @@ a { color: inherit; }
 
 .about-visual img {
   display: block;
-  width: clamp(220px, 26vw, 320px);
+  width: 100%;
+  max-width: 320px;
   height: auto;
 }
 
