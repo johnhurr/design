@@ -5,7 +5,7 @@
   --muted: #68645e;
   --line: #d9d5cd;
   --coral: #ef6049;
-  --coral-text: #b33b2b;
+  --coral-text: var(--coral);
   --blue-gray: #dfe6e7;
   --shell: min(1180px, calc(100vw - 64px));
 }
@@ -124,7 +124,7 @@ a { color: inherit; }
 .project-company { color: var(--coral-text); }
 .project-copy h3 {
   max-width: 440px;
-  margin: 13px 0 18px;
+  margin: 36px 0 18px;
   font-size: clamp(1.35rem, 2vw, 2.05rem);
   font-weight: 400;
   letter-spacing: -.055em;
