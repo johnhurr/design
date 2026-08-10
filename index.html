@@ -1,10 +1,16 @@
 <!doctype html>
+<!--
+  Whoa! You're looking under the covers! You must be an engineer.
+  I love working with engineers, I actually wanted to be a software engineer
+  for a few years and still kind of enjoy it on the side. Feel free to drop me
+  a line if you want to talk shop!
+-->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="John Hurr — Product Design Leadership">
-  <title>John Hurr — Product Design Leadership</title>
+  <meta name="description" content="John Hurr is a product design leader building the teams, systems, and experiences behind connected products.">
+  <title>John Hurr | Product Design Leadership</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,74 +19,120 @@
 </head>
 <body>
   <header class="site-header shell">
-    <a class="brand" href="#top" aria-label="John Hurr home">John Hurr</a>
+    <a class="brand brand-mark" href="#top" aria-label="John Hurr home">JH.</a>
     <nav aria-label="Primary navigation">
       <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="resume/John_Hurr_Resume%207_2026.pdf">Resume</a>
+      <a href="about.html">About</a>
+      <a href="mailto:johnhurr@gmail.com">Contact</a>
+      <a href="resume/John-Hurr-Resume.pdf">Résumé</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero shell" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <h1 id="hero-title">Product Design<br>Leadership</h1>
-        <p>Designing the teams, systems, and experiences behind connected products.</p>
-        <span class="accent-rule" aria-hidden="true"></span>
+        <p class="hero-intro">Hey, I’m John.</p>
+        <h1 id="hero-title">I’m a product design leader building the teams, systems, and experiences behind connected products.</h1>
+        <a class="text-link" href="#work">Explore the work <span aria-hidden="true">↓</span></a>
       </div>
-      <div class="hero-mark" aria-hidden="true"></div>
     </section>
 
     <section class="work-section" id="work" aria-labelledby="work-title">
       <div class="shell">
-        <h2 class="eyebrow" id="work-title">Selected Work</h2>
+        <h2 class="visually-hidden" id="work-title">Selected work</h2>
+        <div class="project-list" id="project-list">
+          <!-- Duplicate a project-card to add work. Keep the number sequence current. -->
+          <article class="project-card">
+            <div class="project-copy">
+              <p class="project-company">01 / Sonos</p>
+              <h3>Making complexity feel simple</h3>
+              <p class="project-description">Aligning product, security, and engineering around a clear customer promise for grouping beyond the home.</p>
+              <p class="project-role">Experience strategy · Cross-functional alignment · Launch decisions</p>
+              <a class="project-action" href="case-studies/off-lan-grouping.html">Read case study <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="project-media image-placeholder">
+              <span>Image placeholder</span>
+              <p>Hero image: multiple Sonos portable products being grouped outdoors. Calm, atmospheric, and product-forward.</p>
+            </div>
+          </article>
 
-        <article class="project">
-          <div class="project-copy">
-            <h3>Sonos</h3>
-            <p class="meta">2021–2026</p>
-            <p>Leading connected audio experiences across hardware, software, and the teams that bring them together.</p>
-            <a class="project-link" href="#" aria-label="View Sonos project">View project <span>→</span></a>
-          </div>
-          <div class="project-image">
-            <img src="images/sonos-ace-clean.png" alt="Black Sonos Ace headphones">
-          </div>
-        </article>
+          <article class="project-card">
+            <div class="project-copy">
+              <p class="project-company">02 / Sonos</p>
+              <h3>One system. Many products.</h3>
+              <p class="project-description">Creating a shared hardware UX language that helped Sonos scale without losing what made the system feel coherent.</p>
+              <p class="project-role">Systems leadership · Experience principles · Organizational leverage</p>
+              <a class="project-action" href="case-studies/hardware-ux-guidelines.html">Read case study <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="project-media image-placeholder">
+              <span>Image placeholder</span>
+              <p>Hero image: a quiet family portrait of Sonos products across categories, different forms, one recognizable system.</p>
+            </div>
+          </article>
 
-        <article class="project">
-          <div class="project-copy">
-            <h3>Best Buy Home App</h3>
-            <p class="meta">2019</p>
-            <p>Post-purchase experience that supports, engages, and builds customer loyalty.</p>
-            <a class="project-link" href="#" aria-label="View Best Buy Home App project">View project <span>→</span></a>
-          </div>
-          <div class="project-image">
-            <img src="images/best-buy-home-clean.png" alt="Best Buy Home App on a mobile phone">
-          </div>
-        </article>
+          <article class="project-card">
+            <div class="project-copy">
+              <p class="project-company">03 / Sonos</p>
+              <h3>Capacity fell. Capability grew.</h3>
+              <p class="project-description">Redesigning priorities, partnerships, and development to preserve strategic coverage through organizational change.</p>
+              <p class="project-role">Organizational design · Portfolio leadership · Team development</p>
+              <a class="project-action" href="case-studies/capacity-and-capability.html">Read case study <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="project-media image-placeholder">
+              <span>Image placeholder</span>
+              <p>Hero image: a restrained workshop or team image showing hardware and software disciplines working together.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-copy">
+              <p class="project-company">04 / Best Buy</p>
+              <h3>Home App</h3>
+              <p class="project-description">A post-purchase experience designed to support customers, deepen engagement, and build loyalty.</p>
+              <p class="project-role">Product strategy · Design leadership · Team growth</p>
+              <span class="project-action is-disabled" aria-disabled="true">Contact for details</span>
+            </div>
+            <div class="project-media has-image">
+              <img src="images/best-buy-home-clean.png" alt="Best Buy Home App shown on a mobile phone" loading="lazy" width="1448" height="1086">
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-copy">
+              <p class="project-company">05 / INRIX</p>
+              <h3>OpenCar Design System</h3>
+              <p class="project-description">A flexible design system for an in-car application ecosystem spanning automakers, developers, and drivers.</p>
+              <p class="project-role">Design systems · Automotive UX · Platform strategy</p>
+              <span class="project-action is-disabled" aria-disabled="true">Contact for details</span>
+            </div>
+            <div class="project-media image-placeholder">
+              <span>Image placeholder</span>
+              <p>Hero image: an in-car interface shown across a small family of dashboard configurations.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="about shell" id="about" aria-labelledby="about-title">
-      <div class="about-visual">
-        <h2 class="eyebrow" id="about-title">About</h2>
+    <section class="about-preview shell" id="about" aria-labelledby="about-title">
+      <div class="about-preview-copy">
+        <p class="kicker">About</p>
+        <h2 id="about-title">I’m a product design leader with 19 years in UX and 10 years in leadership. I build high-performing teams, scalable design practices, and coherent experiences across hardware and software. My work focuses on craft, clarity, and making products work better together.</h2>
+        <a class="text-link" href="about.html">More about me <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="about-preview-portrait">
         <img src="images/john-hurr-headshot-transparent.png" alt="John Hurr">
       </div>
-      <p>I’m a product design leader with 19 years in UX and 10 years in leadership. I build high-performing teams, scalable design practices, and coherent experiences across hardware and software. My work focuses on craft, clarity, and making products work better together.</p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell footer-grid">
-      <div class="monogram" aria-hidden="true">JH</div>
-      <div class="contact">
-        <a href="mailto:hello@johnhurr.com">hello@johnhurr.com</a>
-        <span class="accent-rule small" aria-hidden="true"></span>
-        <p>Seattle, Washington</p>
-      </div>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/" rel="noreferrer">LinkedIn</a>
-        <a href="resume/John_Hurr_Resume%207_2026.pdf">Resume (PDF)</a>
+  <footer class="site-footer" id="contact">
+    <div class="shell simple-footer">
+      <a class="footer-hello" href="mailto:johnhurr@gmail.com">👋🏻 Say hello <span aria-hidden="true">→</span></a>
+      <div class="footer-meta">
+        <a href="https://www.linkedin.com/in/johnhurr" rel="noreferrer">LinkedIn</a>
+        <a href="resume/John-Hurr-Resume.pdf">Résumé</a>
+        <span>Made with love in Seattle, WA</span>
       </div>
     </div>
   </footer>
