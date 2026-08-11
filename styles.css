@@ -328,6 +328,28 @@ a { color: inherit; }
   line-height: 1.55;
 }
 .inline-visual { min-height: 370px; margin-top: 50px; display: flex; align-items: center; justify-content: center; }
+.inline-visual.diagram-visual {
+  min-height: 0;
+  overflow: hidden;
+  background: #fff;
+}
+.inline-visual.diagram-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.inline-visual.native-media-visual {
+  min-height: 370px;
+  overflow: hidden;
+  background: #111;
+}
+.inline-visual.native-media-visual img {
+  display: block;
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  object-position: center;
+}
 .outcomes { margin: 38px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); }
 .outcomes li { min-height: 160px; padding: 28px; background: var(--paper); }
 .outcomes li:first-child { padding-left: 0; }
