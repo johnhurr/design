@@ -5,7 +5,7 @@
   --muted: #68645e;
   --line: #d9d5cd;
   --coral: #ef6049;
-  --coral-text: var(--coral);
+  --coral-text: #b33b2b;
   --blue-gray: #dfe6e7;
   --shell: min(1180px, calc(100vw - 64px));
 }
@@ -124,7 +124,7 @@ a { color: inherit; }
 .project-company { color: var(--coral-text); }
 .project-copy h3 {
   max-width: 440px;
-  margin: 36px 0 18px;
+  margin: 13px 0 18px;
   font-size: clamp(1.35rem, 2vw, 2.05rem);
   font-weight: 400;
   letter-spacing: -.055em;
@@ -143,6 +143,14 @@ a { color: inherit; }
   overflow: hidden;
 }
 .project-media.has-image img { width: 74%; height: 290px; object-fit: contain; }
+.project-media.story-image img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+  object-position: var(--focal-x, 50%) var(--focal-y, 50%);
+  transform: scale(var(--image-scale, 1));
+  transform-origin: var(--focal-x, 50%) var(--focal-y, 50%);
+}
 .image-placeholder {
   padding: 40px;
   flex-direction: column;
@@ -275,6 +283,20 @@ a { color: inherit; }
 .case-meta dt { margin-bottom: 7px; font-size: .67rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
 .case-meta dd { margin: 0; color: var(--muted); }
 .case-visual { width: min(1320px, calc(100vw - 32px)); min-height: clamp(420px, 62vw, 760px); margin: 0 auto; display: flex; align-items: center; justify-content: center; }
+.case-visual.has-image {
+  min-height: 0;
+  overflow: hidden;
+  background: var(--paper-deep);
+}
+.case-visual.has-image img {
+  display: block;
+  width: 100%;
+  height: clamp(420px, 62vw, 760px);
+  object-fit: cover;
+  object-position: var(--focal-x, 50%) var(--focal-y, 50%);
+  transform: scale(var(--image-scale, 1));
+  transform-origin: var(--focal-x, 50%) var(--focal-y, 50%);
+}
 .case-visual.image-placeholder p { max-width: 560px; }
 .story { padding: 135px 0; }
 .story-block { display: grid; grid-template-columns: .45fr 1.25fr; gap: clamp(50px, 10vw, 150px); padding: 76px 0; border-top: 1px solid var(--line); }
@@ -349,6 +371,7 @@ a { color: inherit; }
   .project-card { grid-template-columns: 1fr; min-height: auto; padding: 44px 0; gap: 32px; }
   .project-media { grid-column: 1 / -1; min-height: 280px; order: -1; }
   .project-media.has-image img { height: 235px; }
+  .project-media.story-image img { height: 390px; }
   .about-preview,
   .personal-module.wide,
   .story-block { grid-template-columns: 1fr; }
