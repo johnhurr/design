@@ -143,6 +143,12 @@ a { color: inherit; }
   overflow: hidden;
 }
 .project-media.has-image img { width: 74%; height: 290px; object-fit: contain; }
+.project-media.best-buy-feature { background: #242321; }
+.project-media.best-buy-feature img {
+  width: 100%;
+  height: 390px;
+  object-fit: contain;
+}
 .project-media.story-image img {
   width: 100%;
   height: 390px;
@@ -371,6 +377,7 @@ a { color: inherit; }
   .project-card { grid-template-columns: 1fr; min-height: auto; padding: 44px 0; gap: 32px; }
   .project-media { grid-column: 1 / -1; min-height: 280px; order: -1; }
   .project-media.has-image img { height: 235px; }
+  .project-media.best-buy-feature img { height: 390px; }
   .project-media.story-image img { height: 390px; }
   .about-preview,
   .personal-module.wide,
