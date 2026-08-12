@@ -5,7 +5,6 @@
   --muted: #68645e;
   --line: #d9d5cd;
   --coral: #ef6049;
-  --coral-text: var(--coral);
   --shell: min(1180px, calc(100vw - 64px));
 }
 
@@ -120,7 +119,7 @@ a { color: inherit; }
   border-top: 1px solid var(--line);
 }
 .project-card:last-child { border-bottom: 1px solid var(--line); }
-.project-company { color: var(--coral-text); }
+.project-company { color: var(--coral); }
 .project-copy h3 {
   max-width: 440px;
   margin: 13px 0 18px;
@@ -131,7 +130,7 @@ a { color: inherit; }
 }
 .project-description { max-width: 440px; margin: 0 0 24px; color: var(--muted); font-size: 1.02rem; }
 .project-role { max-width: 440px; margin-bottom: 36px; color: var(--muted); line-height: 1.7; }
-.project-action { color: var(--coral-text); }
+.project-action { color: var(--coral); }
 .project-action.is-disabled { border-bottom: 0; color: var(--muted); cursor: default; }
 .project-media {
   min-height: 390px;
@@ -305,7 +304,7 @@ a { color: inherit; }
 /* Case studies */
 .case-header { border-bottom: 1px solid var(--line); }
 .case-hero { padding: 100px 0 72px; }
-.case-hero .kicker { color: var(--coral-text); }
+.case-hero .kicker { color: var(--coral); }
 .case-hero h1 { max-width: 1030px; margin: 22px 0 32px; font-size: clamp(3.5rem, 7.7vw, 8rem); font-weight: 400; letter-spacing: -.07em; line-height: .94; }
 .case-deck { max-width: 780px; margin: 0; color: var(--muted); font-size: clamp(1.25rem, 2.2vw, 1.8rem); line-height: 1.35; }
 .case-meta { padding: 30px 0 70px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
@@ -368,14 +367,14 @@ a { color: inherit; }
   line-height: 1.08;
 }
 .story-block .large-statement {
-  color: var(--coral-text);
+  color: var(--coral);
   font-size: 1.08rem;
   font-style: italic;
   letter-spacing: 0;
   line-height: 1.55;
 }
 .coral-highlight {
-  color: var(--coral-text);
+  color: var(--coral);
   font-weight: 600;
 }
 .inline-visual { min-height: 370px; margin-top: 50px; display: flex; align-items: center; justify-content: center; }
