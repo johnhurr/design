@@ -5,7 +5,7 @@
   --muted: #68645e;
   --line: #d9d5cd;
   --coral: #ef6049;
-  --coral-text: #b33b2b;
+  --coral-text: var(--coral);
   --shell: min(1180px, calc(100vw - 64px));
 }
 
