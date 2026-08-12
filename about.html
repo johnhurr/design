@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,10 +28,11 @@
     </nav>
   </header>
   <main>
-    <section class="about-cover image-placeholder" aria-label="Image placeholder">
-      <span>About-page portrait</span>
-      <p>A wide, natural image of John, ideally outdoors in the Pacific Northwest or in the workshop. Candid and atmospheric rather than a traditional professional portrait.</p>
-    </section>
+    <div class="about-cover">
+      <div class="about-cover-image" style="--focal-x: 50%; --focal-y: 100%; --image-scale: 1;">
+        <img src="images/about-header-mountain.jpg" alt="John Hurr standing on a stone bridge overlooking a snowy mountain lake" width="1599" height="1204">
+      </div>
+    </div>
 
     <section class="about-introduction shell">
       <h1>When I’m not working, you can usually find me exploring the woods with my wife and two kids or making sawdust in my shop. Here’s a little about who I am outside the office and the inspiration behind the craft I bring to work every day.</h1>
@@ -39,16 +40,36 @@
 
     <section class="personal-grid shell" aria-label="More about John">
       <article class="personal-module wide">
-        <div class="image-placeholder personal-image"><span>Woodworking imagery</span><p>Add a wide workshop image or a finished piece, followed later by process details or a small gallery.</p></div>
-        <div><p class="kicker">Making</p><h2>Woodworking</h2><p>The patient, physical counterpart to digital work. Add a few thoughts about what you build and why you return to the shop.</p></div>
+        <div class="personal-image has-image" style="--focal-x: 50%; --focal-y: 50%; --image-scale: 1;">
+          <img src="images/about-woodworking.jpg" alt="John Hurr woodworking in his shop" width="1800" height="1350" loading="lazy">
+        </div>
+        <div><p class="kicker">Making</p><h2>Woodworking</h2><p>The patient, physical counterpart to my digital life. Currently obsessed with timber framing by hand and Japanese joinery.</p></div>
       </article>
       <article class="personal-module">
-        <div class="image-placeholder personal-image portrait"><span>Family photo</span><p>Add a warm, candid image that feels personal rather than posed.</p></div>
-        <div><p class="kicker">Life</p><h2>Family & Seattle</h2><p>A short note about home, family, and the life around the work can live here.</p></div>
+        <div class="personal-image portrait has-image" style="--focal-x: 50%; --focal-y: 50%; --image-scale: 1;">
+          <img src="images/about-family.jpg" alt="John Hurr with his family" width="1536" height="2048" loading="lazy">
+        </div>
+        <div><p class="kicker">Life</p><h2>Family & Seattle</h2><p>The funniest group of people you’ll ever meet.</p></div>
       </article>
       <article class="personal-module listening">
-        <div><p class="kicker">Currently listening</p><h2>A rotating soundtrack</h2><p>Add Spotify album, artist, or playlist links here. This module is designed to grow into a small, regularly updated listening shelf.</p></div>
-        <a class="text-link is-placeholder" aria-disabled="true">Spotify links coming soon</a>
+        <div>
+          <p class="kicker">Currently listening</p>
+          <h2>A rotating soundtrack</h2>
+        </div>
+        <div class="spotify-embed">
+          <iframe src="https://open.spotify.com/embed/playlist/1bUZ3xDp8PGZUyen5MMOQO?theme=0" title="Spotify playlist: A rotating soundtrack" width="100%" height="352" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <a class="text-link spotify-profile-link" href="https://open.spotify.com/user/johnhurr" target="_blank" rel="noopener noreferrer">Explore all playlists <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="personal-module wide exploring-module">
+        <div class="personal-image has-image" style="--focal-x: 50%; --focal-y: 50%; --image-scale: 1;">
+          <img src="images/about-exploring-pickup.jpg" alt="1989 pickup used for exploring" width="1800" height="1350" loading="lazy">
+        </div>
+        <div>
+          <p class="kicker">’89 Pickup</p>
+          <h2>Exploring</h2>
+          <p>Rebuilt to be an old-forest-service-road machine. Almost 40 years old and hasn’t left me stranded …yet.</p>
+        </div>
       </article>
     </section>
   </main>

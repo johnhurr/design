@@ -1,43 +1,53 @@
 # John Hurr portfolio
 
-This is a static website and can be published using the same kind of hosting as the current site. It has no build step or content-management dependency.
+A dependency-free static portfolio site. There is no build step, package manager, framework, or content-management system.
 
-## Where to edit
+## Structure
 
-- `index.html` contains the homepage introduction, all five project cards, the about preview, contact information, and navigation.
-- `about.html` contains the personal About page and its woodworking, family, and listening placeholders.
-- `case-studies/` contains the three Sonos case studies.
-- `styles.css` contains the shared visual system and responsive behavior.
-- `images/` contains current image assets. Add new imagery here and replace placeholder blocks with standard `<img>` elements.
-- `resume/John-Hurr-Resume.pdf` is the résumé linked throughout the site.
+- `index.html` — homepage, selected-work cards, and About preview
+- `about.html` — personal introduction, photography, and Spotify embed
+- `case-studies/` — individual case-study pages
+- `styles.css` — shared design system and responsive styles
+- `images/` — production image assets
+- `resume/John-Hurr-Resume.pdf` — résumé linked throughout the site
+- `CNAME` — custom-domain configuration for GitHub Pages
 
-## Image placeholder pattern
+Paths are relative so the site works both locally and on static hosting.
 
-Every placeholder includes an editorial description of the intended image. When an image is ready, replace the placeholder:
+## Local preview
+
+Open `index.html` directly, or serve the directory with any basic static server. A server provides a more representative test for remote embeds:
+
+```sh
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000` and check desktop and mobile widths.
+
+## Working with images
+
+Images that need adjustable cropping use CSS custom properties on their wrapper:
 
 ```html
-<div class="case-visual image-placeholder">
-  <span>Opening image</span>
-  <p>Description of the intended image.</p>
+<div class="personal-image has-image" style="--focal-x: 50%; --focal-y: 50%; --image-scale: 1;">
+  <img src="images/example.jpg" alt="Meaningful description" width="1600" height="1200" loading="lazy">
 </div>
 ```
 
-with:
+- `--focal-x` moves the focal point horizontally.
+- `--focal-y` moves the focal point vertically.
+- `--image-scale` controls zoom.
 
-```html
-<div class="case-visual">
-  <img src="../images/your-image.jpg" alt="Clear description of the image">
-</div>
-```
+Keep explicit image dimensions to reduce layout shift, use descriptive alt text, and lazy-load images below the fold.
 
-Homepage project cards live directly in `index.html`. Replace a card's `image-placeholder` block with a standard image block when final imagery is supplied.
+## Adding a case study
 
-## Adding another case study
+1. Duplicate a file in `case-studies/`.
+2. Update its metadata, copy, imagery, and next-project link.
+3. Duplicate a `.project-card` in `index.html`.
+4. Update the card number, content, image, and destination.
+5. Check all internal links and responsive layouts before publishing.
 
-1. Duplicate a file in `case-studies/` and edit its content.
-2. Duplicate a `project-card` in `index.html`.
-3. Update its number, copy, image, and link to the new file.
+## Deployment
 
-## Preview
-
-Open `index.html` in a browser, or serve the folder with any basic local web server. Check desktop and mobile widths before publishing.
+Publish the contents of this directory at the repository root. GitHub Pages can serve it directly; preserve `CNAME` when deploying the custom domain.
