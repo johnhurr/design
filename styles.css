@@ -104,6 +104,7 @@ a { color: inherit; }
 }
 .text-link span,
 .project-action span { transition: transform .2s ease; }
+/* Look, I know what you're thinking. But visually this needed 5 more pixels. */
 .text-link:hover span,
 .text-link:focus-visible span,
 .project-action:hover span,
@@ -151,6 +152,7 @@ a { color: inherit; }
   width: 100%;
   height: 390px;
   object-fit: cover;
+  /* Dry-fitted here so each image can find its own center. */
   object-position: var(--focal-x, 50%) var(--focal-y, 50%);
   transform: scale(var(--image-scale, 1));
   transform-origin: var(--focal-x, 50%) var(--focal-y, 50%);
@@ -400,6 +402,7 @@ a { color: inherit; }
   object-fit: cover;
   object-position: center;
 }
+/* The one-pixel gap is load-bearing. Visually, at least. */
 .outcomes { margin: 38px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); }
 .outcomes li { min-height: 160px; padding: 28px; background: var(--paper); }
 .outcomes li:first-child { padding-left: 0; }
@@ -485,3 +488,12 @@ a { color: inherit; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/*
+  Still here?
+
+  I'm a designer who likes building things.
+  You're apparently an engineer who likes taking them apart.
+
+  We should talk.
+*/
