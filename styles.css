@@ -433,6 +433,16 @@ a { color: inherit; }
   background: var(--coral);
 }
 .outcome-points strong { color: var(--ink); font-weight: 600; }
+.unnecessary-marketing-placement {
+  padding: 58px 18px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.unnecessary-marketing-placement p {
+  margin: 0;
+  font-size: 1.08rem;
+}
+.unnecessary-marketing-placement a { color: var(--coral); }
 .next-project { padding: 100px 0; display: flex; justify-content: space-between; gap: 40px; align-items: end; }
 .next-project h2 {
   max-width: 650px;
